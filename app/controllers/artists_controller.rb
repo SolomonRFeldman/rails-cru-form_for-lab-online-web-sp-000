@@ -9,7 +9,8 @@ class ArtistsController < ApplicationController
   end
   
   def create
-    Artist.create(artist_params)
+    artist = Artist.create(artist_params)
+    redirect_to artist_path(artist)
   end
   
   def edit
