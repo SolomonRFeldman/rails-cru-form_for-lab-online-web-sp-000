@@ -1,7 +1,5 @@
-<%= form_for(Artist.new) do |f| %>
+<%= form_for(Genre.new) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
-  <%= f.label :bio %>
-  <%= f.text_area :bio %>
   <%= f.submit %>
 <% end %>
