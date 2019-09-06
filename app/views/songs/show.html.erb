@@ -1,2 +1,2 @@
 <h1><%= @song.name %></h1>
-<h3>By <%= link_to artist</h3>
+<h3>By <%= link_to @song.artist.name, @song.artist_path %></h3>
