@@ -10,7 +10,7 @@ class GenresController < ApplicationController
   
   def create
     genre = Genre.create(genre_params)
-    redirect_to artist_path(artist)
+    redirect_to genre_path(genre)
   end
   
   def edit
