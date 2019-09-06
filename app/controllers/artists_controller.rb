@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
   end
   
   def create
-    
+    Artist.create(artist_params)
   end
   
   def edit
@@ -18,6 +18,12 @@ class ArtistsController < ApplicationController
   
   def update
     
+  end
+  
+  private
+  
+  def artist_params
+    params.require(:artist).permit(:name, :bio)
   end
   
 end
